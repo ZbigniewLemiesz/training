@@ -27,7 +27,7 @@ public class Solution {
 
     public Integer[] shuffle() {
 
-        List<Integer> list = new ArrayList<Integer>();
+        List<Integer> list = new ArrayList<>();
         addAll(list, numbers.clone());
 
         for (int i = 0; i < numbers.length; i++) {

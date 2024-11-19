@@ -16,7 +16,7 @@ public class Solution {
         for (int i = 0; i < s.length(); i++) {
             if(s.length() - i <= result) break;
             for (int j = i; j < s.length(); j++) {
-                Character c = (Character) s.charAt(j);
+                Character c = s.charAt(j);
                 if (subs.add(c)) {
                     current++;
                     if (j == s.length() - 1 && current > result) result = current;

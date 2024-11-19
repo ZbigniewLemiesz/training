@@ -1,7 +1,5 @@
 package longest_substrng;
 
-import java.util.Arrays;
-
 /**
  * @author Zbigniew Lemiesz
  */

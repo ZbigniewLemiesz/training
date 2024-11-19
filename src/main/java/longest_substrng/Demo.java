@@ -9,6 +9,6 @@ package longest_substrng;
 public class Demo {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.lengthOfLongestSubstring("a"));
+        System.out.println(solution.lengthOfLongestSubstring("ababcdbrf"));
     }
 }

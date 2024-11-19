@@ -8,7 +8,26 @@ import java.util.Set;
  */
 
 public class Solution {
-    //Time Complexity - O(n2)
+    //Time Complexity - O(n)
+    public int lengthOfLongestSubstring(String s) {
+        int result = 0;
+        Set<Character> subs = new HashSet<>();
+        for (int i = 0, j = 0; j < s.length(); ++j) {
+            char c = s.charAt(j);
+            while (!subs.add(c)) {
+                subs.remove(s.charAt(i++));
+            }
+            subs.add(c);
+            result = Math.max(result, j - i + 1);
+
+        }
+        return result;
+    }
+
+
+    /*
+    Time Complexity - O(n2)
+
     public int lengthOfLongestSubstring(String s) {
         int result = 0;
         int current = 0;
@@ -30,4 +49,5 @@ public class Solution {
         }
         return result;
     }
+    */
 }

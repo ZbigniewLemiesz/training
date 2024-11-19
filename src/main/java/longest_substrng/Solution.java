@@ -11,7 +11,7 @@ public class Solution {
     //Time Complexity - O(n)
     public int lengthOfLongestSubstring(String s) {
         int result = 0;
-        Set<Character> subs = new HashSet<>();;
+        Set<Character> subs = new HashSet<>();
         for (int i = 0, j = 0; j < s.length(); ++j) {
             char c = s.charAt(j);
             while (!subs.add(c)) {
